@@ -14,10 +14,32 @@
 	?>
 	<!-- JS script URLs -->
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 	<!-- Render the buttons. -->
-	<div class="g-plusone" data-size="medium" data-href="<?php echo $page_url; ?>"></div>
+	<div class="fb-like st-button" data-href="<?php echo $page_url; ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 	
-	<a href="https://twitter.com/share" class="twitter-share-button"{count} data-text="<?php echo htmlspecialchars($tweet_text); ?>"></a>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	<div class="st-button"><a href="https://twitter.com/share" class="twitter-share-button"{count} data-text="<?php echo htmlspecialchars($tweet_text); ?>"></a></div>
+	
+	<div class="st-button">
+		<a data-pin-do="buttonBookmark" data-pin-url="<?php echo $page_url; ?>" data-pin-count="beside"
+			data-pin-color="white" href="https://www.pinterest.com/pin/create/button/">
+			<img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_white_20.png" />
+		</a>
+	</div>
+	
+	<div class="st-button"><div class="g-plusone" data-size="medium" data-href="<?php echo $page_url; ?>"></div></div>
 </div>
+<style type="text/css">
+	div.sharetools { font-size: 0; }
+	div.sharetools > .st-button { display: inline-block; float: none; margin: 0 10px 0 0; vertical-align: top; }
+</style>
