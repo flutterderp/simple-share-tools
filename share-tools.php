@@ -30,11 +30,16 @@
 	
 	<div class="st-button"><a href="https://twitter.com/share" class="twitter-share-button"{count} data-text="<?php echo htmlspecialchars($tweet_text); ?>"></a></div>
 	
-	<div class="st-button">
+	<?php /*<div class="st-button">
 		<a data-pin-do="buttonBookmark" data-pin-url="<?php echo $page_url; ?>" data-pin-count="beside"
 			data-pin-color="white" href="https://www.pinterest.com/pin/create/button/">
 			<img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_white_20.png" />
 		</a>
+	</div>*/ ?>
+	
+	<div class="st-button">
+		<script src="//platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+		<script type="IN/Share" data-counter="right"></script>
 	</div>
 	
 	<div class="st-button"><div class="g-plusone" data-size="medium" data-href="<?php echo $page_url; ?>"></div></div>
