@@ -27,6 +27,7 @@
 
 	<!-- Render the buttons. -->
 	<div class="fb-like st-button" data-href="<?php echo $page_url; ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+	<?php /*<div class="fb-share-button st-button" data-href="<?php echo $page_url; ?>" data-layout="button" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $page_url; ?>">Share</a></div>*/ ?>
 	
 	<div class="st-button"><a href="https://twitter.com/share" class="twitter-share-button"{count} data-text="<?php echo htmlspecialchars($tweet_text); ?>"></a></div>
 	
