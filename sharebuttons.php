@@ -77,9 +77,6 @@ class Sharetools
 		// Twitter
 		$tw = '<div class="st-button"><a href="https://twitter.com/share" class="twitter-share-button" data-url="'.$this->uri.'" data-text="Check out this site!"></a></div>';
 
-		// Google Plus
-		$gp = '<div class="st-button"><div class="g-plusone" data-size="medium" data-href="'.$this->uri.'"></div></div>';
-
 		// LinkedIn
 		$ln = '<div class="st-button"><script type="IN/Share" data-counter="right" data-url="'.$this->uri.'"></script></div>';
 

@@ -9,11 +9,10 @@
 		else
 			$protocol = 'http://';
 
-		$page_url		= $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-		$tweet_text	= 'Check out this site!';
+		$page_url   = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+		$tweet_text = 'Check out this site!';
 	?>
 	<!-- JS script URLs -->
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	<div id="fb-root"></div>
@@ -42,8 +41,6 @@
 		<script src="//platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
 		<script type="IN/Share" data-counter="right"></script>
 	</div>
-
-	<div class="st-button"><div class="g-plusone" data-size="medium" data-href="<?php echo $page_url; ?>"></div></div>
 </div>
 <style type="text/css">
 	div.sharetools { font-size: 0; }
