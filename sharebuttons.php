@@ -77,6 +77,10 @@ class Sharetools
 		// Twitter
 		$tw = '<div class="st-button"><a href="https://twitter.com/share" class="twitter-share-button" data-url="'.$this->uri.'" data-text="Check out this site!"></a></div>';
 
+		// Email
+		$email = '<div class="st-button"><a class="mail" href="mailto:?subject=Check+out+this+link&amp;body='.$this->uri.'" target="_blank" rel="noopener noreferrer">';
+		$email .= '<span class="fa fa-envelope"></span> Email a Friend</a></div>';
+
 		// LinkedIn
 		$ln = '<div class="st-button"><script type="IN/Share" data-counter="right" data-url="'.$this->uri.'"></script></div>';
 
@@ -85,7 +89,7 @@ class Sharetools
 		$pt .= (isset($this->params['image']) && !empty($this->params['image'])) ? ' data-pin-media="'.$this->params['image'].'"' : '';
 		$pt .= 'data-pin-color="white" href="https://www.pinterest.com/pin/create/button/"></a></div>';
 
-		$buttons = '<div class="sharetools">' . $fb . $tw . $pt . $ln . '</div>';
+		$buttons = '<div class="sharetools">' . $fb . $tw . $pt . $ln . $email . '</div>';
 
 		return $buttons;
 	}
